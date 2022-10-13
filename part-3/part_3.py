@@ -6,7 +6,7 @@ my_book = {
     "pages": 374
 }
 
-my_book_list = [
+my_books = [
     {
         "title": "The Da Vinci Code",
         "author": "Dan Brown", 
@@ -59,9 +59,40 @@ print(book_parser(my_book))
 
 # Code below
 
+def get_book_title(book_dictionary):
+    book_title = book_dictionary["title"]
+    return book_title
+
+print(get_book_title(my_book))
+
+def get_book_author(book_dictionary):  
+    book_author = book_dictionary["author"] 
+    return book_author
+
+print(get_book_author(my_book))
 
 
+def get_book_year(book_dictionary):
+    book_year = book_dictionary["year"]
+    return book_year
 
+print(get_book_year(my_book))
+
+def get_book_rating(book_dictionary):
+    book_rating = book_dictionary["rating"]
+    return book_rating
+
+print(get_book_rating(my_book))
+
+def get_book_pages(book_dictionary):
+    book_pages = book_dictionary["pages"]
+    return book_pages
+
+print(get_book_pages(my_book))
+    
+    
+    
 # Finally, create at least three new functions that might be useful as we expand our home library app. Perhaps think of a way you could accept additional arguments when the function is called? Also, imagine you have a list filled with dictionaries like above.
 
 # Code below
+
