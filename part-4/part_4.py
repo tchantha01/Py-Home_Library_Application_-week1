@@ -105,7 +105,7 @@ books_source = [
 
 def main_menu(books_source):
     
-    options = input(" Select 1 to add your book. Select 2 to see all your books. Select 3 to exit.  ")
+    options = input("Select 1 to add your book. Select 2 to see all your books. Select 3 to exit.  ")
     
     if options == "1": 
         books_source.append(add_new_book())
@@ -113,12 +113,11 @@ def main_menu(books_source):
         print(books_source)    
     elif options == "3": 
         print("Exiting")
-        
     else:
         print("Please enter a number for one of the options.")        
         
     
-print(books_source)
+# print(books_source)
 
 ### Step 5 - while loops
 
@@ -126,3 +125,57 @@ print(books_source)
 
 # Code here
 
+my_books = [
+    {
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown", 
+        "year": 2003,
+        "rating": 4.70,
+        "pages": 489
+    },
+    
+    {
+        "title": "The Pillars of the Earth",
+        "author": "Ken Follett", 
+        "year": 1989,
+        "rating": 4.60,
+        "pages": 806 
+    },
+    
+    {
+         "title": "The Hardy Boys: Series",
+        "author": "Frank W. Dixon", 
+        "year": 1927-2005,
+        "rating": 4.10,
+        "pages": 48-100
+    },
+    
+    {
+         "title": "My Side of the Mountain",
+        "author": "Jean Craighead George", 
+        "year": 1959,
+        "rating": 4.10,
+        "pages": 177
+    }
+    
+]
+
+def main_menu(books_source):
+    
+    active = True
+    
+    while active:
+        options = input(" Select 1 to add your book. Select 2 to see all your books. Select 3 to exit.  ")
+        
+        if options == "1": 
+            books_source.append(add_new_book())
+        elif options == "2": 
+            print(books_source)    
+        elif options == "3": 
+            print("Exiting")
+            active = False
+        else:
+            print("Please enter a number for one of the options.") 
+            
+main_menu(my_books)            
+         
