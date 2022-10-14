@@ -116,7 +116,7 @@ def main_menu(books_source):
     else:
         print("Please enter a number for one of the options.")        
         
-    
+main_menu()    
 # print(books_source)
 
 ### Step 5 - while loops
@@ -177,5 +177,5 @@ def main_menu(books_source):
         else:
             print("Please enter a number for one of the options.") 
             
-main_menu(my_books)            
+main_menu()            
          
