@@ -96,3 +96,32 @@ print(get_book_pages(my_book))
 
 # Code below
 
+def get_average_ratings(book_dictionary_list):
+    average_rating = 0
+    num_books = 4
+    
+    for book_dictionary in book_dictionary_list:   
+        average_rating += book_dictionary["rating"]/ num_books
+        
+    return average_rating
+
+print(get_average_ratings(my_books))    
+
+def get_set_of_book_titles(book_dictionary_list):   
+    book_title_set = set()
+    
+    for book_dictionary in book_dictionary_list: 
+        book_title_set.add(book_dictionary["title"])
+        
+    return book_title_set
+
+print(get_set_of_book_titles(my_books))   
+
+def get_title_author(book_dictionary_list):     
+    
+    for title, author in book_dictionary_list: 
+        
+   
+    
+print(get_title_author(my_books))    
+       
